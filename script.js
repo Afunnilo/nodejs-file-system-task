@@ -1,7 +1,7 @@
-const https = require('https');
+const http = require('http');
 const fs = require('fs');
 
-https.get('https://jsonplaceholder.typicode.com/posts', res =>{
+http.get('http://jsonplaceholder.typicode.com/posts', res =>{
     let body = '';
     res.on('data', data => {
         body += data;
